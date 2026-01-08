@@ -19,7 +19,7 @@ export interface UserWithRole extends User{
     org_id:string;
 }
 
-export class userModel{
+export class UserModel{
     static async findById(id:string):Promise< User | null>{
         try{
             const result = await pool.query(
